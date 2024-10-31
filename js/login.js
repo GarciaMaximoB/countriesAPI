@@ -13,13 +13,16 @@ window.onload = function () {
 
   async function fetchData(username) {
     try {
-      const response = await fetch("https://tu-app.vercel.app/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username }),
-      });
+      const response = await fetch(
+        "https://countries-api-wine.vercel.app/api/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username }),
+        }
+      );
       fetchedData = await response.json();
     } catch (error) {
       console.error("Error:", error);
