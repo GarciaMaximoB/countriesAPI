@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Detalle del País</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <button id="back-button" class="back-button">&#8592; Atrás</button>
+    </nav>
+
+    <div class="detail-container">
+      <div class="country-detail">
+        <img class="country-flag" id="detail-flag" alt="Bandera del país" />
+        <h2 id="detail-name" class="country-link"></h2>
+        <h3 id="official-name" class="official-name"></h3>
+        <div class="country-info">
+          <div class="info-item">
+            <strong>Capital:</strong> <span id="detail-capital"></span>
+          </div>
+          <div class="info-item">
+            <strong>Idioma:</strong> <span id="detail-language"></span>
+          </div>
+          <div class="info-item">
+            <strong>Población:</strong> <span id="detail-population"></span>
+          </div>
+          <div class="info-item">
+            <strong>Área:</strong> <span id="detail-area"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/detail.js"></script>
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>

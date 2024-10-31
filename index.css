@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #202124;
+  color: white;
+}
+
+.home-container {
+  margin-top:5vh;
+  width: 99vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+}
+
+.country-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #d8d8d8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.country-card:hover {
+  transform: scale(1.05);
+}
+
+.country-flag {
+  width: 80px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.country-name {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.country-card img {
+  width: 100px;
+}
+
+/* PAGNIA DE DETALLE */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.back-button:hover {
+  color: #ccc;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#detail-name {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.official-name{
+    margin-bottom: 30px;
+    opacity: 50%;
+}
+
+.country-detail {
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.country-flag {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.country-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+.info-item {
+  font-size: 1rem;
+  color: #333;
+}
+
+#logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#logout-btn:hover {
+  color: #95cee9;
+}
+
